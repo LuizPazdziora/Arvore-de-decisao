@@ -11,13 +11,13 @@ python3 -m venv env
 Ative o ambiente virtual (**você deve fazer isso sempre que for executar algum script deste repositório**):
 
 ``` shell
-source ./env/bin/activate
+source .\env\Scripts\activate
 ```
 
 Instale as dependências com:
 
 ``` shell
-python3 -m pip install -r requirements.txt --upgrade
+python -m pip install -r requirements.txt --upgrade
 ```
 
 ## Deployment
