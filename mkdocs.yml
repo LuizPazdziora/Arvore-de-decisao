@@ -136,7 +136,7 @@ nav:
   - This documentation: ./thisdocumentation/main.md
   - Roteiros:
     - Árvore de decisão: ./roteiro1/main.md
-    - Roteiro 2: ./roteiro2/main.md
-    - Roteiro 3: ./roteiro3/main.md
+    - KNN: ./roteiro2/main.md
+    - K-Means: ./roteiro3/main.md
     - Roteiro 4: ./roteiro4/main.md
   - Projeto: ./projeto/main.md

@@ -94,6 +94,29 @@ def preprocess(df):
     df['Churn'].fillna(df['Churn'].mode()[0], inplace=True)
 
 
+
+
+    #Label encoder para preparar variaveis categoricas para o modelo
+
+    label_encoder = LabelEncoder()
+    df['gender'] = label_encoder.fit_transform(df['gender'])
+    df['Partner'] = label_encoder.fit_transform(df['Partner'])
+    df['Dependents'] = label_encoder.fit_transform(df['Dependents'])
+    df['PhoneService'] = label_encoder.fit_transform(df['PhoneService'])
+    df['MultipleLines'] = label_encoder.fit_transform(df['MultipleLines'])
+    df['InternetService'] = label_encoder.fit_transform(df['InternetService'])
+    df['OnlineSecurity'] = label_encoder.fit_transform(df['OnlineSecurity'])
+    df['OnlineBackup'] = label_encoder.fit_transform(df['OnlineBackup'])
+    df['DeviceProtection'] = label_encoder.fit_transform(df['DeviceProtection'])
+    df['TechSupport'] = label_encoder.fit_transform(df['TechSupport'])
+    df['StreamingTV'] = label_encoder.fit_transform(df['StreamingTV'])
+    df['StreamingMovies'] = label_encoder.fit_transform(df['StreamingMovies'])
+    df['Contract'] = label_encoder.fit_transform(df['Contract'])
+    df['PaperlessBilling'] = label_encoder.fit_transform(df['PaperlessBilling'])
+    df['PaymentMethod'] = label_encoder.fit_transform(df['PaymentMethod'])
+
+
+
     # Tratamento de valores missmatch na coluna TotalCharges
     s = df['TotalCharges'].astype(str).str.strip().replace({"2283.3"})
     df['TotalCharges'] = pd.to_numeric(s, errors='coerce').astype('Float64')
@@ -149,7 +172,7 @@ def preprocess(df):
     df['Churn'].fillna(df['Churn'].mode()[0], inplace=True)
 
 
-    # Tratamento de valores missmatch na coluna TotalCharges
+    # Corrigir TotalCharges string para numérico
     s = df['TotalCharges'].astype(str).str.strip().replace({"2283.3"})
     df['TotalCharges'] = pd.to_numeric(s, errors='coerce').astype('Float64')
 
@@ -231,8 +254,9 @@ buffer = StringIO()
 plt.savefig(buffer, format="svg")
 print(buffer.getvalue())
 
-
 ```
+
+
 
 
 
