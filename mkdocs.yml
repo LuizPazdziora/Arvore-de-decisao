@@ -1,7 +1,7 @@
 site_name: Machine Learning
 site_url: https://luizpazdziora.github.io/MachineLearning/
 repo_url: https://github.com/LuizPazdziora/MachineLearning
-repo_name: LuizPazdziora/MachineLearning
+repo_name: github/LuizPazdziora/MachineLearning
 
 theme:
   name: material
@@ -109,7 +109,7 @@ plugins:
       enable_creation_date: true
   - git-authors
   - git-committers:
-      repository: LuizPazdziora/MachineLearning
+      repository: hsandmann/hsandmann.github.com
       branch: main
   - search
   - badges
