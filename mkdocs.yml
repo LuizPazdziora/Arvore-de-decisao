@@ -1,8 +1,7 @@
-site_name: Template de Entrega
-site_author: Luiz Fernando Pazdziora Costa
-site_url: https://LuizPazdziora.github.io/Arvore-de-decisao
-repo_url: https://github.com/LuizPazdziora/Arvore-de-decisao
-repo_name: github/Arvore-de-decisao
+site_name: Machine Learning
+site_url: https://luizpazdziora.github.io/MachineLearning/
+repo_url: https://github.com/LuizPazdziora/MachineLearning
+repo_name: LuizPazdziora/MachineLearning
 
 theme:
   name: material
