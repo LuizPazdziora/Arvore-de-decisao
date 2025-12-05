@@ -137,5 +137,5 @@ nav:
     - Árvore de decisão: ./roteiro1/main.md
     - KNN: ./roteiro2/main.md
     - K-Means: ./roteiro3/main.md
-    - Roteiro 4: ./roteiro4/main.md
+    - SVM: ./roteiro4/main.md
   - Projeto: ./projeto/main.md

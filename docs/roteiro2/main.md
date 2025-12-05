@@ -64,15 +64,8 @@ Interpretação:
     ```
 
 
-=== "Matriz de confusão" 
+=== "Matriz de confusão"  
+![Matriz de confusão](cm-knn-churn.svg)
 
-     <figure markdown="span">
-        ![Matriz de confusão](../cm-knn-churn.svg)
-    </figure>
-
-
-=== "pca-decision-boundary" 
-
-     <figure markdown="span">
-        ![pca-decision-boundary](../knn-pca-decision-boundary.svg)
-    </figure>
+=== "pca-decision-boundary"  
+![pca-decision-boundary](knn-pca-decision-boundary.svg)
